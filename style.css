@@ -27,6 +27,10 @@ body {
   background-color: var(--alternate-color);
   font-family: "Work Sans", sans-serif;
   text-align: center;
+  /* background-image: url('https://unsplash.com/photos/3FA80_d8rH0'); */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  /* background-position: ; */
 }
 
 .container {
@@ -35,6 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: var(--space3);
+  background-image: url('https://unsplash.com/photos/3FA80_d8rH0');
   /* width: 100%; */
 }
 
