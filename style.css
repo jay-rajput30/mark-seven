@@ -78,6 +78,8 @@ body {
   margin-bottom: var(--space1);
   border: var(--primary-color) 2px solid;
   border-radius: 10px;
+  padding: var(--space1);
+  font-family: inherit;
 }
 
 .btn {
