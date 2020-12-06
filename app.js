@@ -9,7 +9,7 @@ function translateText(){
    .then(res=> res.json())
    .then( res=> {
     display.innerText = `${res.contents.translated}`;
-    console.log(res);
+    // console.log(res);
    })
    .catch(e => alert(e));
 
