@@ -11,7 +11,7 @@ function translateText(){
     display.innerText = `${res.contents.translated}`;
     // console.log(res);
    })
-   .catch(e => alert(e));
+   .catch(e => alert('You have encountered an server error.  Please check after an hour!'));
 
 }
 button.addEventListener('click', ()=>{
