@@ -1,15 +1,17 @@
 const txtArea = document.querySelector('#txtArea');
-const btn = document.querySelector('.btn');
-const output = document.querySelector('.output');
+const button = document.querySelector('.btn');
+const display = document.querySelector('.output');
 
-let url  = "https://api.funtranslations.com/translate/groot.json";
+let url = "https://api.funtranslations.com/translate/groot.json?text=";
 
+function translateText(){ 
+   fetch(`${url}${txtArea}`)
+   .then(res=> res.json())
+   .then( res=> display.innerText = `${res.contents.translated}`)
+   .catch(e => alert(e));
 
-function translateText(){
-    // url += url + txtArea.value;
-    console.log(txtArea.value);
 }
+button.addEventListener('click', ()=>{
+ translateText(txtArea.value);
+})
 
-btn.addEventListener('click', ()=>{
-    translateText();
-});
